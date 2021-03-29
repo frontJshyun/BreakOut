@@ -60,7 +60,7 @@ function BreakOut() {
   }, [])
   
   const ready = () => {
-    introSound = document.getElementById('introSound');
+    // introSound = document.getElementById('introSound');
     gameStartSound = document.getElementById('gameStartSound');
     // backgroundSound = document.getElementById('backgroundSound');
     leftKeySound = document.getElementById('leftKeySound');
@@ -294,7 +294,7 @@ function BreakOut() {
       {isGameOver && <GameOver onNextStepPerceivedList={handleNextStepPerceivedList} />}
       {isPerceivedList && <PerceivedList onNextStepInit={handleNextStepInit}/>}
 
-      <audio id="introSound" src={"/sound/intro.wav"} preload = "auto"></audio>
+      {/* <audio id="introSound" src={"/sound/intro.wav"} preload = "auto"></audio> */}
       <audio id="gameStartSound" src={"/sound/start.wav"} preload = "auto"></audio>
       <audio id="backgroundSound" src={"/sound/background.wav"} preload = "auto" loop></audio>
       <audio id="leftKeySound" src={"/sound/left.wav"} preload = "auto"></audio>
