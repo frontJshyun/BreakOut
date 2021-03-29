@@ -112,7 +112,7 @@ const Cam = (props) => {
       <div style={{ transform: `scaleX(${props.isLeft ? -1 : 1})`}}>
         <video id="webcam" autoPlay playsInline width={width} height={height}></video>
         <canvas id="canvas" className="d-none" style={{ display: 'none' }}></canvas>
-        <audio id="snapSound" src={null} preload = "auto" style={{ display: 'none' }}></audio>
+        <audio id="snapSound" src={"https://bensonruan.com/wp-content/uploads/2019/10/snap.wav"} preload = "auto" style={{ display: 'none' }}></audio>
       </div>
       <div style={{ position: 'absolute', top: '24px', left: '50%', fontSize: '100px', color: '#aaa' }}>
         {time > 0 ? time : ""}

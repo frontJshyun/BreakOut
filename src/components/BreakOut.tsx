@@ -296,13 +296,11 @@ function BreakOut() {
 
       <audio id="introSound" src={"/sound/intro.wav"} preload = "auto"></audio>
       <audio id="gameStartSound" src={"/sound/start.wav"} preload = "auto"></audio>
-      {/* <audio id="backgroundSound" src={"/sound/background.wav"} preload = "auto" loop></audio> */}
+      <audio id="backgroundSound" src={"/sound/background.wav"} preload = "auto" loop></audio>
       <audio id="leftKeySound" src={"/sound/left.wav"} preload = "auto"></audio>
       <audio id="rightKeySound" src={"/sound/right.wav"} preload = "auto"></audio>
       <audio id="gameOverSound" src={"/sound/over.wav"} preload = "auto"></audio>
       <audio id="skipSound" src={"/sound/skip.wav"} preload = "auto"></audio>
-
-      <iframe src="/sound/intro.wav" allow="autoplay" style={{ display: 'none' }} id="introSound" />
 
     </div>
   )
