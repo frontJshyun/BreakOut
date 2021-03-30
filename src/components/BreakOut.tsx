@@ -206,9 +206,9 @@ function BreakOut() {
     ballRadius = 10;
     // ballX = paddleX + (paddleW * 0.8);
     // ballY = getHeight(browserWidth) - paddleH - ballRadius - 11;
-    ballX = 50;
+    ballX = _.floor(browserWidth / 2);
     ballY = 50;
-    dx = 4;
+    dx = 0;
     dy = 8;
   }
 
