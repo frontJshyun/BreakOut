@@ -48,9 +48,6 @@ function BreakOut() {
 
   React.useEffect(() => {
     ready();
-    
-
-    var context = new AudioContext();
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -88,7 +85,7 @@ function BreakOut() {
   }
 
   const getHeight = (width: number) => {
-    return _.round(width * 0.75);
+    return _.clamp(_.round(width * 0.75), window.innerHeight);
   }
 
   const handleKeydown = (evt: KeyboardEvent) => {
