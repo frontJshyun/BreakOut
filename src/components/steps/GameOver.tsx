@@ -51,7 +51,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const GameOver = (props: GameOverProps) => {
-  const [descriptions, setDescriptions] = React.useState(["", "", ""]);
+  const [descriptions, setDescriptions] = React.useState(["", "", "", "", "", "", "", ""]);
   const classes = useStyles();
 
   const handleUpdateDescription = (index: number, value: string) => {
@@ -72,7 +72,8 @@ const GameOver = (props: GameOverProps) => {
       <MUI.Box className={classes.container}>
         <MUI.Box className={classes.instruction}>
           GAME OVER<br /><br />
-          당신이 인지한 당신의 행동을 순서대로 적어주세요.
+          방금 한 스스로의 행위들을<br />
+          인지한 "순서대로" 최대한 자세히 적어주세요
         </MUI.Box>
         <MUI.Box className={classes.descriptions}>
           {_.map(descriptions, (description: string, index: number) => (

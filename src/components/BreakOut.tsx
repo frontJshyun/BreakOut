@@ -206,7 +206,7 @@ function BreakOut() {
     ballX = _.floor(browserWidth / 2);
     ballY = 50;
     dx = 0;
-    dy = 8;
+    dy = 5;
   }
 
   const clearCanvas = (ctx: CanvasRenderingContext2D) => {

@@ -38,7 +38,7 @@ const GameReady = (props: GameReadyProps) => {
     <MUI.Dialog open={true}>
       <MUI.Box className={classes.container}>
         <MUI.Box className={classes.instruction}>
-          당신의 행동에 주목하세요.
+          당신의 행동에 "충분히" 주목하세요.
         </MUI.Box>
         <MUI.Button 
           className={classes.button}

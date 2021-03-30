@@ -137,13 +137,14 @@ const Cam = (props) => {
   return (
     <>
       <div style={{ transform: `scaleX(${props.isLeft ? -1 : 1})`}}>
-        <video id="webcam" autoPlay playsInline width={width} height={height}></video>
+        <video id="webcam" autoPlay playsInline width={width} height={height} style={{ display: 'none' }}></video>
         <canvas id="canvas" className="d-none" style={{ display: 'none' }}></canvas>
         <audio id="snapSound" src={"https://bensonruan.com/wp-content/uploads/2019/10/snap.wav"} preload = "auto" style={{ display: 'none' }}></audio>
       </div>
       <div style={{ position: 'absolute', top: 0, left: 0, transform: `scaleX(${props.isLeft && time > 0 ? 1 : -1})`}}>
         <canvas id="snapCanvas" width={width} height={height} />
       </div>
+      <div style={{ width, height, position: 'absolute', top: 0, left: 0, backgroundColor: 'rgba(153, 25, 94, 0.1)' }} />
       <div style={{ position: 'absolute', top: '24px', left: '50%', fontSize: '100px', color: '#aaa' }}>
         {time > 0 ? time : ""}
       </div>
